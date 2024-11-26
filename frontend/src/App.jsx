@@ -63,6 +63,7 @@ function App() {
       });
       dispatch(setSocket(socketio));
 
+      // listen all the events
       socketio.on('getOnlineUsers', (onlineUsers) => {
         dispatch(setOnlineUsers(onlineUsers));
       });
@@ -76,7 +77,7 @@ function App() {
         dispatch(setSocket(null));
       }
     } else if (socket) {
-      socket?.close();
+      socket.close();
       dispatch(setSocket(null));
     }
   }, [user, dispatch]);
@@ -88,4 +89,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
