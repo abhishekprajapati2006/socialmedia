@@ -1,11 +1,11 @@
 import React from 'react'
 import Posts from './Posts'
-import Status from './Status'
+// import Status from './Status'
 
 const Feed = () => {
   return (
-    <div className='flex-1 my-8 flex flex-col items-center pl-[20%]'>
-      <Status/>
+    <div className='flex-1 my-2 flex flex-col items-center pl-[20%]'>
+      {/* <Status/> */}
         <Posts/>
     </div>
   )

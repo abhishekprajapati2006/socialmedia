@@ -28,8 +28,8 @@ const Profile = () => {
     <div className='flex max-w-5xl justify-center mx-auto pl-10'>
       <div className='flex flex-col gap-20 p-8'>
         <div className='grid grid-cols-2'>
-          <section className='flex items-center justify-center'>
-            <Avatar className='h-32 w-32'>
+          <section className='flex items-center justify-center border-4 w-40 h-40 border-[#23384e] rounded-full'>
+            <Avatar className='h-36 w-36'>
               <AvatarImage src={userProfile?.profilePicture} alt="profilephoto" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
